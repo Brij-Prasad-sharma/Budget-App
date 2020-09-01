@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Budget App</title>
+        <link type="text/css" rel="stylesheet" href="style.css" >
+        <link href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css" rel="stylesheet" type="text/css">
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+    </head>
+    <body>
+
+        <!-- Budget Display -->
+        <div class="budget-div">
+            <div class="center-div">
+                <div class="center-div-title">Available Budget in Month</div>
+                <div class="center-div-budget">0</div>
+                <div class="budget-income">
+                    <span>Income</span>
+                    <span class="total-income">0</span>
+                </div>
+                <div class="budget-expense">
+                    <div>Expense</div>
+                    <div>
+                        <span class="total-expense">0</span>
+                        <span class="total-expense-percentage ">0</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Input text area -->
+        <div class="input-area">
+
+            <div class="input-div">
+                <select class="input-type blue">
+                    <option value="income" selected>+</option>
+                    <option value="expense">-</option>
+                </select>
+    
+                <input type="text" class="description blue" placeholder="Description">
+    
+                <input type="number" class="value blue" placeholder="Value">
+                
+               <button class="input-button"><i class="ion-ios-checkmark-outline blue-color"></i></button> 
+            </div>
+           
+            
+
+        </div>
+
+        <!-- Income and expenses display -->
+        <div class="container">
+            <div class="income">
+                <h1 class="blue-color income-title">Income</h1>
+                <div class="income-list">
+                   
+                    <!-- Income item goes here -->
+
+
+                </div>
+                
+            </div>
+            <div class="expense">
+                <h1 class="red-color expense-title">Expense</h1>
+                <div class="expense-list">
+
+                    <!-- Expense item goes here -->
+
+                </div>
+            </div>
+        </div>
+    </body>
+    <script src="app.js"></script>
+</html>
